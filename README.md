@@ -1,13 +1,14 @@
-# Flowboard Workspace
+# ⚡ Flowboard Workspace
 
-Aplicação web de produtividade desenvolvida para praticar JavaScript, manipulação do DOM e persistência de dados no navegador.
+Aplicação web de produtividade desenvolvida para praticar **JavaScript, manipulação do DOM e persistência de dados no navegador**.
 
-## Sobre o projeto
+## 🚀 Sobre o projeto
 
-O Flowboard é um workspace no estilo Kanban para organizar tarefas entre três etapas: **A fazer**, **Em andamento** e **Concluídas**.
-O projeto foi desenvolvido como parte do meu portfólio de Sistemas de Informação, com foco em transformar conceitos de front-end em uma aplicação interativa.
+O Flowboard é um mini workspace no estilo Kanban para organizar tarefas entre três etapas: **A fazer**, **Em andamento** e **Concluídas**.
 
-## Funcionalidades
+O projeto foi desenvolvido como parte do meu portfólio de Sistemas de Informação, com foco em transformar conceitos de front-end em uma aplicação realmente interativa.
+
+## ⚙️ Funcionalidades
 
 - Criar tarefas
 - Editar tarefas
@@ -22,16 +23,15 @@ O projeto foi desenvolvido como parte do meu portfólio de Sistemas de Informaç
 - Persistência com LocalStorage
 - Layout responsivo
 
-## Tecnologias
+## 🛠️ Tecnologias
 
 - HTML5
 - CSS3
 - JavaScript
 - LocalStorage
-- Git
-- GitHub
+- Git e GitHub
 
-## O que pratiquei
+## 💡 O que pratiquei
 
 - Manipulação do DOM
 - Eventos em JavaScript
@@ -39,18 +39,16 @@ O projeto foi desenvolvido como parte do meu portfólio de Sistemas de Informaç
 - Arrays e objetos
 - Filtros e busca
 - Persistência local
-- Desenvolvimento de interface responsiva
+- Componentização visual
+- Interface responsiva
 
-## Como executar
+## ▶️ Como executar
 
-Abra o arquivo `index.html` no navegador.
+Abra o arquivo `index.html` no navegador. Não é necessário instalar dependências.
 
-Não é necessário instalar dependências.
+## 👨‍💻 Autor
 
-## Autor
-
-**Nicolas Costa**
-
+**Nicolas Costa**  
 Estudante de Sistemas de Informação — PUC Minas  
 Belo Horizonte — MG  
 GitHub: @nicolascosta28
