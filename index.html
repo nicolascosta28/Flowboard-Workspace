@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flowboard | Nicolas Costa</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="#"><b>NC.</b><span>FLOWBOARD</span></a>
+  <div class="head-right"><small>PRODUCTIVITY WORKSPACE / 2026</small><button id="newTask">+ NOVA TAREFA</button></div>
+</header>
+
+<main>
+<section class="hero">
+  <p class="eyebrow">PROJECT MANAGEMENT / LOCAL WORKSPACE</p>
+  <h1>Organize. Priorize.<br><em>Faça acontecer.</em></h1>
+  <p class="desc">Um workspace Kanban para organizar tarefas, acompanhar progresso e manter o foco. Os dados ficam salvos no próprio navegador.</p>
+</section>
+
+<section class="stats">
+ <article><span>TOTAL</span><strong id="statTotal">0</strong></article>
+ <article><span>EM ANDAMENTO</span><strong id="statDoing">0</strong></article>
+ <article><span>CONCLUÍDAS</span><strong id="statDone">0</strong></article>
+ <article><span>PROGRESSO</span><strong id="statProgress">0%</strong><div class="progress"><i id="progressBar"></i></div></article>
+</section>
+
+<section class="toolbar">
+ <div class="search"><span>⌕</span><input id="search" placeholder="Buscar tarefa..."></div>
+ <div class="filters">
+   <button class="filter active" data-priority="all">TODAS</button>
+   <button class="filter" data-priority="alta">ALTA</button>
+   <button class="filter" data-priority="media">MÉDIA</button>
+   <button class="filter" data-priority="baixa">BAIXA</button>
+ </div>
+ <button id="reset" class="ghost">RESTAURAR DEMO</button>
+</section>
+
+<section class="board" id="board"></section>
+
+<footer><span>NICOLAS COSTA</span><span>HTML / CSS / JAVASCRIPT / LOCALSTORAGE</span><span>PORTFOLIO PROJECT</span></footer>
+</main>
+
+<dialog id="taskModal">
+<form id="taskForm">
+ <div class="modal-head"><div><small id="modalMode">NOVA TAREFA</small><h2 id="modalTitle">Criar tarefa</h2></div><button type="button" id="closeModal" class="close">×</button></div>
+ <input type="hidden" id="taskId">
+ <label>TÍTULO<input id="title" maxlength="55" required placeholder="Ex.: Finalizar dashboard"></label>
+ <label>DESCRIÇÃO<textarea id="description" maxlength="180" placeholder="Detalhes da tarefa..."></textarea></label>
+ <div class="form-grid">
+  <label>STATUS<select id="status"><option value="todo">A fazer</option><option value="doing">Em andamento</option><option value="done">Concluída</option></select></label>
+  <label>PRIORIDADE<select id="priority"><option value="baixa">Baixa</option><option value="media" selected>Média</option><option value="alta">Alta</option></select></label>
+ </div>
+ <label>PRAZO<input type="date" id="due"></label>
+ <div class="actions"><button type="button" id="deleteTask" class="danger hidden">EXCLUIR</button><span></span><button type="button" id="cancel">CANCELAR</button><button type="submit">SALVAR TAREFA</button></div>
+</form>
+</dialog>
+<script src="script.js"></script>
+</body></html>
